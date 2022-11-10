@@ -2,6 +2,12 @@
 	"comment": "Top-level application config for development, adding on top of the core config",
 	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/applicationConfigFile.schema.json",
 	"accessibleLinker": true,
+	"authentication": {
+		"startup": {
+			"adapter": "PASSWORD",
+			"component": "Registration"
+		}
+	},
 	"servicesConfig": {
 		"distributedStore": {
 			"initialStores": [
@@ -26,7 +32,7 @@
 											"appID": "2"
 										},
 										{
-											"name": "ProcessMonitor",
+											"name": "Process Monitor",
 											"appID": "pm"
 										},
 										{
@@ -59,7 +65,7 @@
 		},
 		"launcher": {
 			"staggerPixels": 40,
-			"unknownComponent": "NonConfiguredComponent",
+			"unknownComponent": "nonConfiguredComponent",
 			"defaultPreloads": {
 				"//": "Add preloads that will be injected into each browserView."
 			}
@@ -104,8 +110,8 @@
 				"finsemble.workspace.cache": "IndexedDBAdapter"
 			},
 			"dataStoreAdapters": {
-				"LocalStorageAdapter": "$moduleRoot/adapters/localStorageAdapter.js",
-				"IndexedDBAdapter": "$moduleRoot/adapters/indexedDBAdapter.js"
+				"LocalStorageAdapter": "$applicationRoot/adapters/localStorageAdapter.js",
+				"IndexedDBAdapter": "$applicationRoot/adapters/indexedDBAdapter.js"
 			}
 		},
 		"workspace": {
@@ -119,6 +125,14 @@
 	},
 	"globalHotkeys": {},
 	"//": "this importConfig contains components that are necessary to start Finsemble. All other components are loaded dynamically. See server/auth/test.json",
-	"importConfig": ["$configRoot/application/appd.json"],
+	"importConfig": [
+		"$configRoot/application/appd.json",
+		"$configRoot/application/UIComponents.json",
+		"$configRoot/application/components.json",
+		"$configRoot/application/workspaces.json",
+		"$configRoot/application/services.json",
+		"$configRoot/application/securityPolicies.json",
+		"$configRoot/application/dashbarConfig.json"
+	],
 	"toolbarMenus": {}
 }
