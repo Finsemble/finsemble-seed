@@ -21,7 +21,7 @@ This repo, the "seed", is an initial empty project for your smart desktop. The s
 
 1. 📡 Clone the repository.
    ```
-   git clone https://github.com/chartiq/finsemble-seed
+   git clone https://github.com/finsemble/finsemble-seed
    ```
 2. 📦 Install npm dependencies
 
@@ -53,10 +53,9 @@ The seed project contains configuration and assets that you can customize to cre
 
    - _configs_ - Configuration for the smart desktop
 
-      - _configs/other/server-environment-startup.json_ - Used to define the development and production server
-         configurations used by the Finsemble application.
-
       - _configs/application_ - Contains all of the base configurations for the Finsemble application.
+
+- _project.json_ - Used to define the development and production server and installer configurations used by the Finsemble application.
 
 ## The API, please
 
