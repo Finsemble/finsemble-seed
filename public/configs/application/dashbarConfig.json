@@ -1,0 +1,21 @@
+{
+	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/dashbarFile.schema.json",
+	"comment": "For more information on configuring and setting up the Dashbar, see https://documentation.finsemble.com/tutorial-toolbar.html#dashbar",
+	"availableDashbarItems": {
+		"chart1": {
+			"title": "EURUSD",
+			"url": "https://dashbar.finsemble.com/index.html?symbol=EURUSD",
+			"width": 350
+		},
+		"chart2": {
+			"title": "EURGBP",
+			"url": "https://dashbar.finsemble.com/index.html?symbol=EURGBP",
+			"width": 350
+		},
+		"chart3": {
+			"title": "EURCHF",
+			"url": "https://dashbar.finsemble.com/index.html?symbol=EURCHF",
+			"width": 350
+		}
+	}
+}
