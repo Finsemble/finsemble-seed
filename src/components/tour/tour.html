@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="../../vendor.bundle.js"></script>
+		<title>Take a Tour</title>
+		<link rel="stylesheet" type="text/css" href="tour.css" />
+		<script src="tour.js"></script>
+	</head>
+
+	<body class="finsemble">
+		<div id="container">
+			<div class="spacer1"></div>
+			<div id="slides">
+				<div class="slide-active">
+					<div style="width: 100%; text-align: center">
+						<img src="./img/1-overview.gif" class="slide-image" height="338" alt="" />
+					</div>
+					<div class="spacer2"></div>
+					<h1>Welcome to Your Smart Desktop</h1>
+					<p class="detail">
+						A smart desktop is the hub of all activities. It contains all of your mission critical applications and
+						contains features that allow you to work faster and smarter. Click Next to learn more about the tools at
+						your fingertips.
+					</p>
+				</div>
+				<div class="slide">
+					<div style="width: 100%; text-align: center">
+						<img src="./img/2-app-launch.gif" class="slide-image" height="338" alt="" />
+					</div>
+					<div class="spacer2"></div>
+					<h1>Launch your applications</h1>
+					<p class="detail">
+						Your mission critical applications can be launched from your toolbar at the top of your screen. Simply
+						select the Apps menu to view the applications that are available to you. Use the star icon to favorite
+						applications for faster access in the future.
+					</p>
+				</div>
+				<div class="slide">
+					<div style="width: 100%; text-align: center">
+						<img src="./img/3-snapping.gif" class="slide-image" height="338" alt="" />
+					</div>
+					<div class="spacer2"></div>
+					<h1>Snap applications together and adjust borders</h1>
+					<p class="detail">
+						Create intuitive, custom arrangements of applications by simply moving two or more windows together. When
+						applications are snapped like this, their borders are shared and can be dragged to adjust both windows.
+					</p>
+				</div>
+				<div class="slide">
+					<div style="width: 100%; text-align: center">
+						<img src="./img/4-docking.gif" class="slide-image" height="338" alt="" />
+					</div>
+					<div class="spacer2"></div>
+					<h1>Attach apps together for easy arrangement</h1>
+					<p class="detail">
+						Once you have created a custom arrangement of windows, attach the windows together by clicking on the
+						"Attach" icon on any window in the group. Now application windows will move as a single unit.
+					</p>
+				</div>
+				<div class="slide">
+					<div style="width: 100%; text-align: center">
+						<img src="./img/5-workspaces.gif" class="slide-image" height="338" alt="" />
+					</div>
+					<div class="spacer2"></div>
+					<h1>Use Workspaces to keep your apps task-centric</h1>
+					<p class="detail">
+						Mission critical applications can be launched, snapped, and attached together to create your very custom
+						desktop. Experiment with different layouts and configurations. Once you have found the right fit, save and
+						name your layout as a workspace to use in the future.
+					</p>
+				</div>
+				<div class="slide">
+					<div class="spacer2"></div>
+					<div style="width: 100%; text-align: center; padding: 0px; margin: 0px">
+						<div class="landing_rectangle" role="button" tabindex="0">
+							<div class="spacer3"></div>
+							<img src="img/icons-app-web.svg" height="260px" alt="" />
+							<div class="spacer1"></div>
+							Read our User Guide
+						</div>
+						<div class="spacer2"></div>
+						<h1 id="learn_more">Want to Learn More?</h1>
+					</div>
+					<div class="spacer3"></div>
+					<p class="detail">
+						More information about the features you just learned about can be found in the user guide. Or, take the
+						reins and become a power user with some handy keyboard shortcuts.
+					</p>
+				</div>
+			</div>
+			<div id="carousel" role="navigation" aria-label="Carousel">
+				<span role="button" title="Page 1" class="stop-active" tabIndex="0" data-index="1"></span>
+				<span role="button" title="Page 2" class="stop" tabIndex="0" data-index="2"></span>
+				<span role="button" title="Page 3" class="stop" tabIndex="0" data-index="3"></span>
+				<span role="button" title="Page 4" class="stop" tabIndex="0" data-index="4"></span>
+				<span role="button" title="Page 5" class="stop" tabIndex="0" data-index="5"></span>
+				<span role="button" title="Page 6" class="stop" tabIndex="0" data-index="6"></span>
+			</div>
+			<div class="spacer3"></div>
+			<button class="button" id="next" onclick="window.next()">Next</button>
+			<button class="button" id="close" onclick="window.close()">Close</button>
+		</div>
+	</body>
+</html>

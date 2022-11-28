@@ -1,0 +1,50 @@
+{
+	"comment": "config to define default workspace on first run",
+	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/workspacesFile.schema.json",
+	"workspaces": [
+		{
+			"version": "1.0.0",
+			"name": "Default Workspace",
+			"type": "workspace",
+			"groups": {},
+			"windows": [
+				{
+					"componentType": "Tour",
+					"affinity": "workspaceComponents",
+					"alwaysOnTop": false,
+					"appUUID": "workspaceComponents",
+					"autoShow": true,
+					"backgroundColor": "#151f28",
+					"bottom": 689,
+					"defaultHeight": 600,
+					"defaultLeft": 0,
+					"defaultTop": 89,
+					"defaultWidth": 800,
+					"frame": false,
+					"fullscreen": false,
+					"height": 600,
+					"icon": "http://localhost:3375/assets/img/Finsemble_Taskbar_Icon.png",
+					"left": 0,
+					"maxHeight": 8000,
+					"maxWidth": 8000,
+					"maximizable": true,
+					"minHeight": 0,
+					"minWidth": 0,
+					"minimizable": true,
+					"monitorInfo": 0,
+					"opacity": 1,
+					"resizable": false,
+					"right": 800,
+					"showTaskbarIcon": true,
+					"top": 89,
+					"transparent": false,
+					"url": "http://localhost:3375/build/components/tour/tour.html",
+					"waitForPageLoad": false,
+					"width": 800,
+					"windowState": 0,
+					"windowType": "WebWindow"
+				}
+			]
+		}
+	]
+}

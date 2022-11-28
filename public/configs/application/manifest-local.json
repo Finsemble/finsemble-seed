@@ -1,11 +1,14 @@
 {
 	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/manifestFile.schema.json",
+	"devtools_port": 9090,
 	"startup_app": {
 		"requireHandshake": true
 	},
+	"splashScreenTimeout": 3000,
 	"appAssets": [
 		{
-			"src": "https://assets.finsemble.com/releases/8.2.1/assimilation/assimilation.zip",
+			"src": "https://assets.finsemble.com/releases/6.6.0/assimilation/assimilation.zip",
+			"version": "6.6.0.0",
 			"alias": "assimilation",
 			"target": "AssimilationMain.exe"
 		}
@@ -31,26 +34,13 @@
 			},
 			"promptBeforeAllowingExternalApps": false
 		},
-		"deprecatedConfig": [
-			{
-				"versionDeprecated": "8.1",
-				"operation": "migrateAppDFDC320",
-				"description": "Migrating Finsemble's AppD config to FDC3 2.0 format.",
-				"userMessage": "Migrating Finsemble's AppD config to FDC3 2.0 format.",
-				"userMessageType": "warn"
-			}
-		],
 		"custom": {
 			"//": "Customer macros definitions must go here (e.g. 'myApplicationRoot' so it can be referenced elsewhere as '$myApplicationRoot'), along with other custom config at this level."
 		},
-		"importConfig": [
-			"./config.json"
-		]
+		"importConfig": ["../../configs/application/config.json"]
 	},
 	"finsemble-electron-adapter": {
 		"useDOMBasedMovement": true,
-		"allowedManifestDomains": [
-			"*"
-		]
+		"allowedManifestDomains": ["*"]
 	}
 }

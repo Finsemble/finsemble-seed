@@ -1,0 +1,58 @@
+{
+	"authentication": {
+		"output": "components/authentication/Authentication",
+		"entry": "./src/components/authentication/Authentication.tsx"
+	},
+	"toolbar": {
+		"output": "components/toolbar/Toolbar",
+		"entry": "./src/components/toolbar/src/Toolbar.tsx"
+	},
+	"linker": {
+		"output": "components/linker/Linker",
+		"entry": "./src/components/linker/Linker.tsx"
+	},
+	"quickComponentForm": {
+		"output": "components/quickComponentForm/QuickComponentForm",
+		"entry": "./src/components/quickComponentForm/QuickComponentForm.tsx"
+	},
+	"yesNoDialog": {
+		"output": "components/yesNoDialog/YesNoDialog",
+		"entry": "./src/components/yesNoDialog/YesNoDialog.tsx"
+	},
+	"singleInputDialog": {
+		"output": "components/singleInputDialog/SingleInputDialog",
+		"entry": "./src/components/singleInputDialog/SingleInputDialog.tsx"
+	},
+	"UserPreferences": {
+		"output": "components/userPreferences/UserPreferences",
+		"entry": "./src/components/userPreferences/UserPreferences.tsx"
+	},
+	"appCatalog": {
+		"output": "components/appCatalog/AppCatalog",
+		"entry": "./src/components/appCatalog/AppCatalog.tsx"
+	},
+	"nonConfiguredComponent": {
+		"output": "components/nonConfiguredComponent/nonConfiguredComponent",
+		"entry": "./src/components/nonConfiguredComponent/nonConfiguredComponent.js"
+	},
+	"processMonitor": {
+		"output": "components/processMonitor/ProcessMonitor",
+		"entry": "./src/components/processMonitor/ProcessMonitor.tsx"
+	},
+	"systemTrayComponent": {
+		"output": "components/systemTrayComponent/SystemTrayComponent",
+		"entry": "./src/components/systemTrayComponent/SystemTrayComponent.tsx"
+	},
+	"smartDesktopDesigner": {
+		"output": "components/smartDesktopDesigner/smartDesktopDesigner",
+		"entry": "./src/components/smartDesktopDesigner/smartDesktopDesigner.tsx"
+	},
+	"NotificationsCenter": {
+		"output": "components/notificationsCenter/NotificationsCenter",
+		"entry": "./src/components/notificationsCenter/NotificationsCenter.tsx"
+	},
+	"NotificationsToasts": {
+		"output": "components/notificationsToasts/NotificationsToasts",
+		"entry": "./src/components/notificationsToasts/NotificationsToasts.tsx"
+	}
+}

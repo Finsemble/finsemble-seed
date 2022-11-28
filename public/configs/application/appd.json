@@ -2,79 +2,17 @@
 	"comment": "AppD component config",
 	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/appdConfigFile.schema.json",
 	"appd": {
-		"Getting Started Tutorial": {
-			"appId": "Getting Started Tutorial",
-			"name": "Getting Started Tutorial",
-			"manifest": {
-				"window": {
-					"url": "https://documentation.finsemble.com/tutorial-gettingStarted.html",
-					"height": 800,
-					"width": 1000
-				},
-				"component": {
-					"spawnOnStartup": false
-				},
-				"foreign": {
-					"services": {
-						"workspaceService": {
-							"persistURL": true
-						}
-					},
-					"components": {
-						"App Launcher": {
-							"launchableByUser": false
-						},
-						"Window Manager": {
-							"FSBLHeader": true,
-							"persistWindowState": true,
-							"title": "Finsemble Getting Started Tutorial"
-						}
-					}
-				}
-			}
-		},
-		"Finsemble Documentation": {
-			"appId": "Finsemble Documentation",
-			"name": "Finsemble Documentation",
-			"manifest": {
-				"window": {
-					"url": "http://documentation.chartiq.com/finsemble",
-					"left": "center",
-					"top": "center",
-					"height": 800,
-					"width": 1000
-				},
-				"component": {},
-				"foreign": {
-					"services": {
-						"workspaceService": {
-							"persistURL": true
-						}
-					},
-					"components": {
-						"App Launcher": {
-							"launchableByUser": false
-						},
-						"Window Manager": {
-							"FSBLHeader": true,
-							"persistWindowState": true,
-							"title": "Finsemble Documentation"
-						}
-					}
-				}
-			}
-		},
 		"ChartIQ Example App": {
 			"name": "ChartIQ Example App",
 			"appId": "ChartIQ Example App",
 			"description": "Visualize market data in the leading FDC3 compliant technical chart.",
 			"manifest": {
 				"window": {
-					"url": "https://salesdemo-v6.finsemble.com/production/ChartIQ/Finsemble-SD-ChartIQ/technical-analysis-chart.html",
+					"url": "https://assets.finsemble.com/components/chart/technical-analysis-chart.html",
 					"width": 800,
 					"height": 600,
 					"options": {
-						"minWidth": 75
+						"minWidth": 175
 					}
 				},
 				"foreign": {
@@ -104,7 +42,7 @@
 					]
 				}
 			},
-			"version": "8.4.0",
+			"version": "1.0.0",
 			"tooltip": "ChartIQ Technical Chart",
 			"images": [
 				{
@@ -116,25 +54,37 @@
 			"contactEmail": "info@cosaic.io",
 			"supportEmail": "support@finsemble.com",
 			"publisher": "Cosaic",
-			"icons": [
-				{
-					"url": "https://i.imgur.com/mpBdiHd.png"
-				}
-			],
 			"intents": [
 				{
 					"name": "ViewChart",
 					"displayName": "View Chart",
-					"contexts": ["fdc3.instrument", "fdc3.instrumentList", "fdc3.position", "fdc3.portfolio"]
+					"contexts": ["fdc3.instrument"]
 				}
 			]
 		},
 		"AG-Grid Example Blotter": {
 			"appId": "AG-Grid Example Blotter",
 			"name": "AG-Grid Example Blotter",
+			"description": "Organize data with FDC3 compliant blotters built on AG Grid",
 			"manifest": {
 				"window": {
-					"url": "https://salesdemo-v6.finsemble.com/production/ChartIQ/Finsemble-SD-Blotter/index.html"
+					"url": "https://assets.finsemble.com/components/ag-grid/index.html",
+					"width": 1000,
+					"height": 600
+				},
+				"foreign": {
+					"components": {
+						"App Launcher": {
+							"launchableByUser": true
+						},
+						"Toolbar": {
+							"iconURL": "https://assets.finsemble.com/components/ag-grid/ag-grid-logo.png"
+						},
+						"Window Manager": {
+							"FSBLHeader": true,
+							"persistWindowState": true
+						}
+					}
 				},
 				"interop": {
 					"selectConnect": [
@@ -143,21 +93,19 @@
 							"cc": "#Workspace"
 						}
 					]
-				},
-				"foreign": {
-					"components": {
-						"App Launcher": {
-							"launchableByUser": true
-						},
-						"Window Manager": {
-							"FSBLHeader": true
-						},
-						"Toolbar": {
-							"iconClass": "ff-component"
-						}
-					}
 				}
-			}
+			},
+			"version": "1.0.0",
+			"tooltip": "AG Grid FDC3 compatible blotter",
+			"tags": ["grid", "ag-grid", "blotter", "fdc3"],
+			"contactEmail": "info@cosaic.io",
+			"supportEmail": "support@finsemble.com",
+			"publisher": "Cosaic",
+			"icons": [
+				{
+					"url": "https://assets.finsemble.com/components/ag-grid/ag-grid-logo.png"
+				}
+			]
 		},
 		"FDC3 workbench": {
 			"appId": "FDC3 workbench",
@@ -203,7 +151,7 @@
 			"name": "Tour",
 			"manifest": {
 				"window": {
-					"url": "$moduleRoot/ui-components/Tour/tour.html",
+					"url": "$applicationRoot/components/tour/tour.html",
 					"affinity": "workspaceComponents",
 					"options": {
 						"resizable": false,
@@ -218,7 +166,7 @@
 				},
 				"component": {
 					"displayName": "Take a Tour",
-					"preload": "$moduleRoot/preloads/zoom.js"
+					"preload": "$applicationRoot/preloads/zoom.js"
 				},
 				"foreign": {
 					"services": {
@@ -249,7 +197,7 @@
 			"publisher": "Cosaic",
 			"icons": [
 				{
-					"src": "$moduleRoot/ui-components/Tour/take-a-tour.svg"
+					"src": "$applicationRoot/components/tour/take-a-tour.svg"
 				}
 			]
 		}
