@@ -119,6 +119,6 @@
 	},
 	"globalHotkeys": {},
 	"//": "this importConfig contains components that are necessary to start Finsemble. All other components are loaded dynamically. See server/auth/test.json",
-	"importConfig": ["$configRoot/application/apps.json", "$configRoot/application/appd.json"],
+	"importConfig": ["$configRoot/application/apps.json"],
 	"toolbarMenus": {}
 }
