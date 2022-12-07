@@ -5,7 +5,7 @@
 	},
 	"appAssets": [
 		{
-			"src": "https://assets.finsemble.com/releases/8.2.2/assimilation/assimilation.zip",
+			"src": "https://assets.finsemble.com/releases/8.3.0-beta.5/assimilation/assimilation.zip",
 			"alias": "assimilation",
 			"target": "AssimilationMain.exe"
 		}
@@ -31,20 +31,12 @@
 			},
 			"promptBeforeAllowingExternalApps": false
 		},
-		"deprecatedConfig": [
-			{
-				"versionDeprecated": "8.1",
-				"operation": "migrateAppDFDC320",
-				"description": "Migrating Finsemble's AppD config to FDC3 2.0 format.",
-				"userMessage": "Migrating Finsemble's AppD config to FDC3 2.0 format.",
-				"userMessageType": "warn"
-			}
-		],
 		"custom": {
 			"//": "Customer macros definitions must go here (e.g. 'myApplicationRoot' so it can be referenced elsewhere as '$myApplicationRoot'), along with other custom config at this level."
 		},
+		"windowTitleBarUrl": "$applicationRoot/components/windowTitleBar/WindowTitleBar.js",
 		"importConfig": [
-			"./config.json"
+			"../../configs/application/config.json"
 		]
 	},
 	"finsemble-electron-adapter": {
