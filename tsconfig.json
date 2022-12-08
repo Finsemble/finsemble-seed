@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"outDir": "./public/build/",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2020",
+		"typeRoots": ["node_modules/@types", "node_modules/@finsemble"]
+	},
+	"include": ["src/**/*"],
+	"exclude": ["src/angular-components/"]
+}
