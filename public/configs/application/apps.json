@@ -110,7 +110,7 @@
 			"name": "Finsemble Documentation",
 			"type": "web",
 			"details": {
-				"url": "http://documentation.chartiq.com/finsemble"
+				"url": "http://documentation.finsemble.com"
 			},
 			"hostManifests": {
 				"Finsemble": {
