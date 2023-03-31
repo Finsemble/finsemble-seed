@@ -4,7 +4,7 @@
 		"manifestUrl": "http://mysite.com/configs/application/manifest-local.json",
 		"updateUrl": "http://mysite.com/configs/application/updatesLocation",
 		"icon": "./public/assets/img/installer_icon.ico",
-		"version": "8.6.0",
+		"version": "8.7.0-beta.1",
 		"name": "Finsemble",
 		"authors": "Cosaic",
 		"description": "Finsemble",
