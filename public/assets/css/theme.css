@@ -2,7 +2,7 @@
 `theme.css` is imported into all of Finsemble's UI components. It is the very last piece of CSS
 that is imported, which means that any CSS in this file will *override* Finsemble's default CSS.
 
-See https://documentation.chartiq.com/finsemble/tutorial-UIComponents.html#css
+See https://documentation.finsemble.com/docs/customize/customize-with-SDK/user-experience/UIComponents/#css
 */
 
 :root {
