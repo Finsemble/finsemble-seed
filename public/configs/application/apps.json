@@ -57,7 +57,7 @@
 			"categories": ["analytics", "charts", "market data", "visualisation"],
 			"contactEmail": "info@cosaic.io",
 			"supportEmail": "support@finsemble.com",
-			"publisher": "Cosaic",
+			"publisher": "Finsemble",
 			"interop": {
 				"intents": {
 					"listensFor": {
@@ -110,7 +110,7 @@
 			"name": "Finsemble Documentation",
 			"type": "web",
 			"details": {
-				"url": "http://documentation.chartiq.com/finsemble"
+				"url": "http://documentation.finsemble.com"
 			},
 			"hostManifests": {
 				"Finsemble": {
@@ -205,7 +205,7 @@
 			"categories": ["developer tools", "training"],
 			"contactEmail": "info@cosaic.io",
 			"supportEmail": "support@finsemble.com",
-			"publisher": "Cosaic",
+			"publisher": "Finsemble",
 			"icons": [
 				{
 					"src": "http://fdc3.finos.org/toolbox/fdc3-workbench/fdc3-icon-256.png"
@@ -225,9 +225,9 @@
 						"options": {
 							"resizable": false,
 							"autoShow": true,
-							"alwaysOnTop": false,
-							"addToWorkspace": true
+							"alwaysOnTop": false
 						},
+						"addToWorkspace": true,
 						"top": "center",
 						"left": "center",
 						"width": 800,
@@ -264,7 +264,7 @@
 				}
 			},
 			"version": "1.0.0",
-			"publisher": "Cosaic",
+			"publisher": "Finsemble",
 			"icons": [
 				{
 					"src": "$moduleRoot/ui-components/Tour/take-a-tour.svg"
