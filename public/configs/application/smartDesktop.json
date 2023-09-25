@@ -1,0 +1,12 @@
+{
+	"preloads": [
+		{
+			"url": "https://assets.finsemble.com/preloads/zoom.js",
+			"alias": "zoom"
+		},
+		{
+			"url": "https://assets.finsemble.com/preloads/nativeOverrides.js",
+			"alias": "native-overrides"
+		}
+	]
+}
