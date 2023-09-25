@@ -1,0 +1,4 @@
+{
+	"$schema": "../../../node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/servicesFile.schema.json",
+	"services": {}
+}
