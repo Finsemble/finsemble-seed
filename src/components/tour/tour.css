@@ -1,0 +1,168 @@
+@import url("../../assets/css/finsemble.css");
+
+body {
+	margin: 0px;
+	user-select: none;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.spacer1 {
+	height: 12px;
+}
+
+.spacer2 {
+	height: 15px;
+}
+
+.spacer3 {
+	height: 20px;
+}
+
+h1 {
+	font-weight: var(--font-weight-1);
+	color: var(--procMonitor-font-color);
+	height: 17px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: OpenSans;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 17px;
+	letter-spacing: normal;
+	color: var(--font-color);
+	text-align: center;
+}
+
+button {
+	width: 42px;
+	height: 24px;
+	border-radius: 5px;
+	background-color: var(--accent-primary);
+	position: absolute;
+	right: 30px;
+	bottom: 18px;
+	font-family: OpenSans;
+	font-size: 11px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--font-color);
+	border: none;
+}
+button:hover {
+	background-color: var(--button-affirmative-background-hover-color);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+#quitFS {
+	color: #ee5c5c;
+	background-color: #ffffff;
+	font-size: 100%;
+	width: 140px;
+}
+
+.detail {
+	height: 74px;
+	margin: 10px 96px;
+	opacity: 0.75;
+	font-family: OpenSans;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--font-color);
+}
+
+#carousel {
+	position: absolute;
+	bottom: 35px;
+	text-align: center;
+	width: 100%;
+}
+
+.stop {
+	width: 10px;
+	height: 10px;
+	margin: 0 8px 0 0;
+	/* border: solid 1px var(--core-primary-5); */
+}
+.stop::before {
+	content: "\25CB";
+	font-size: 20px;
+}
+
+.stop-active {
+	width: 10px;
+	height: 10px;
+	margin: 0 8px 0 0;
+	/* border: solid 1px var(--core-primary-5);
+	background-color: var(--core-primary-5); */
+}
+.stop-active::before {
+	content: "\2B24";
+	font-size: 15px;
+}
+
+.slide {
+	display: none;
+}
+
+.slide-active {
+	display: block;
+}
+
+.slides,
+.slide,
+.slide-active {
+	padding: 0px;
+	margin: 0px;
+}
+
+#close {
+	display: none;
+}
+
+.side-by-side {
+	display: inline;
+}
+
+.landing_rectangle {
+	width: 600px;
+	height: 338px;
+	margin: 0 20px 0 0;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	background-color: var(--core-primary-2);
+	display: inline-block;
+	font-family: OpenSans;
+	font-size: 14px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+}
+
+#learn_more {
+	margin-left: 0px;
+}
+
+[role="button"] {
+	cursor: pointer;
+}
