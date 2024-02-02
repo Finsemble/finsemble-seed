@@ -5,7 +5,6 @@
 			"initialStores": [
 				{
 					"name": "Finsemble-AppLauncher-Store",
-					"preferPreviousState": true,
 					"foundation": {
 						"appFolders": {
 							"list": ["Advanced App Launcher", "Favorites"],
