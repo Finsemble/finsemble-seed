@@ -1,0 +1,10 @@
+{
+	"localStorageAdapter": {
+		"output": "adapters/localStorageAdapter",
+		"entry": "./src/adapters/localStorageAdapter.ts"
+	},
+	"indexDBAdapter": {
+		"output": "adapters/indexedDBAdapter",
+		"entry": "./src/adapters/indexedDBAdapter.ts"
+	}
+}
