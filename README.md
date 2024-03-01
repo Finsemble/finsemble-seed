@@ -2,7 +2,7 @@
 
 # Finsemble Seed 🌱
 
-Note, the finsemble-seed project is intended for developers. If you're looking to get going quickly without any development then [contact us](https://cosaic.io/contact/) to get access to the **Finsemble Smart Desktop Designer** - a no-code GUI tool for assembling an FDC3 compliant smart desktop. If you are an existing Finsemble client, run `yarn sdd` to start using the Smart Desktop Designer.
+Note, the finsemble-seed project is intended for developers. If you're looking to get going quickly without any development then [contact us](https://cosaic.io/contact/) to get access to the **Finsemble Smart Desktop Designer** - a no-code GUI tool for assembling an FDC3 compliant smart desktop. If you are an existing Finsemble client, contact us at [support@finsemble.com](mailto:support@finsemble.com) to start using the Smart Desktop Designer.
 
 ## What is the "seed"?
 
