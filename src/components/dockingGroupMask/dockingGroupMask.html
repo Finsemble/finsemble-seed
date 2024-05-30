@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="groupMask" lang="en">
+	<!-- This UI component serves as the scrim that appears when a group
+	of windows is dragged. -->
+	<head>
+		<meta charset="utf-8" />
+		<script src="../../vendor.bundle.js"></script>
+		<link rel="stylesheet" href="../../assets/css/finsemble.css" />
+		<title>Group Mask</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			var drop = function (e) {
+				FSBL.Clients.RouterClient.transmit("tabbingDragEnd", { gotDrop: true });
+				const params = {
+					mousePosition: {
+						x: e.screenX,
+						y: e.screenY,
+					},
+					allowDropOnSelf: true,
+				};
+				FSBL.Clients.RouterClient.query("DockingService.stopTilingOrTabbing", params, function () {});
+				FSBL.Clients.RouterClient.transmit("DockingService.stopTilingOrTabbing", params);
+			};
+
+			var dragOver = function (e) {
+				e.preventDefault();
+				return false;
+			};
+
+			document.addEventListener("drop", drop);
+			document.addEventListener("dragover", dragOver);
+		</script>
+	</body>
+</html>
