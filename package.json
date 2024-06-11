@@ -1,6 +1,6 @@
 {
 	"name": "finsemble-seed",
-	"version": "8.11.1",
+	"version": "10.0.0-iocd.10",
 	"scripts": {
 		"adapter": "finsemble adapter",
 		"build": "finsemble build --watch=false",
@@ -8,18 +8,22 @@
 		"create-app": "finsemble create-app",
 		"create-preload": "finsemble create-preload",
 		"dev": "finsemble build --start=true",
+		"dev-iocd": "finsemble build --start=true --iocd=true",
+		"iocd": "finsemble start --iocd=true",
 		"launch": "finsemble launch",
 		"makeInstaller": "finsemble makeInstaller",
+		"makeInstaller-iocd": "finsemble makeInstaller --iocd=true",
 		"prod": "finsemble build --mode=production --watch=false --prepare=true",
 		"server": "finsemble server",
 		"sdd": "finsemble sdd",
 		"start": "finsemble start",
+		"start-iocd": "finsemble start --iocd=true",
 		"template": "finsemble template"
 	},
 	"author": "Finsemble",
 	"license": "SEE LICENSE IN LICENSE",
 	"dependencies": {
-		"@finsemble/finsemble-core": "8.11.1",
+		"@finsemble/finsemble-core": "10.0.0-iocd.10",
 		"@types/react": "18.2.29",
 		"@types/react-dom": "18.2.15",
 		"react": "18.2.0",

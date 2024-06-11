@@ -16,3 +16,4 @@ pkg/
 pkg-development/
 pkg-production/
 .yarn/
+.env

@@ -2,44 +2,71 @@
 `theme.css` is imported into all of Finsemble's UI components. It is the very last piece of CSS
 that is imported, which means that any CSS in this file will *override* Finsemble's default CSS.
 
+This is the default "dark" theme. You can modify these as appropriate for your branding.
+
 See https://documentation.finsemble.com/docs/customize/customize-with-SDK/user-experience/UIComponents/#css
 */
 
 :root {
-	/*
-    --core-primary: #22262f;
+	--core-primary: #22262f;
+	--core-primary-1: #20171e;
+	--core-primary-2: #373b43;
+	--core-primary-3: #3d4455;
+	--core-primary-4: #5b606f;
+	--core-primary-5: #acb2c0;
+	--accent-primary: #0a8cf4;
+	--accent-primary-1: #087ddb;
+	--accent-primary-2: #398bff;
+	--accent-positive: #2cc13f;
+	--accent-positive-1: #27ae38;
+	--accent-aware: #f5a623;
+	--accent-aware-1: #dc951f;
+	--accent-negative: #f26666;
+	--accent-negative-1: #da5c5c;
+	--scrollbar-color: white;
+	--font-family: "OpenSans", sans-serif;
+	--font-color: white;
+	--font-color-1: var(--core-primary-5);
+	--font-color-2: black;
+	--font-weight: 600;
+	--font-weight-1: 400;
+	--font-weight-2: bold;
+	--font-size: 12px;
+}
 
-    --core-primary-1: #171A20;
-    --core-primary-2: #373B43;
-    --core-primary-3: #3D4455;
-    --core-primary-4: #5B606F;
-    --core-primary-5: #ACB2C0;
+/**
+When switching themes, the theme name will be added to the UI component's <html> tag. This section changes values to
+correspond to the "light" theme. You can modify these as appropriate for your branding.
+**/
+html.light {
+	--core-primary: #fff;
+	--core-primary-1: #edeef2;
+	--core-primary-2: #e6e7ed;
+	--core-primary-3: #d4d7e0;
+	--core-primary-4: #373b43;
+	--core-primary-5: #20171e;
+	--scrollbar-color: gray;
+	--font-color: black;
+	--font-color-1: var(--core-primary-5);
+	--font-color-2: white;
+}
 
-    --accent-primary: #0A8CF4;
-    --accent-primary-1: #087DDB;
-    --accent-primary-2: #398BFF;
+/**
+This is a quick translation from Finsemble CSS variables to io.CD CSS variables. These ensure that window title bars
+and group headers will correspond to the selected theme
+**/
+:root {
+	--t42-tab-bar-background: var(--core-primary);
+	--t42-body-color: var(--font-color);
+	--t42-tab-group-caption-background: var(--core-primary-1);
+	--t42-tab-bar-tab-background: var(--core-primary-1);
+	--t42-tab-bar-selected-tab-background: var(--core-primary-3);
+	--t42-standard-button-color: var(--font-color-1);
+	--g42-font-family: var(--font-family);
+	--g42-font-size: var(--font-size);
 
-    --accent-positive: #2CC13F;
-    --accent-positive-1: #27AE38;
-
-    --accent-aware: #F5A623;
-    --accent-aware-1: #DC951F;
-
-    --accent-negative: #F26666;
-    --accent-negative-1: #DA5C5C;
-
-    --scrollbar-color: white;
-
-    --font-family: "OpenSans", sans-serif;
-
-    --font-color: white;
-    --font-color-1: var(--core-primary-5);
-    --font-color-2: black;
-
-    --font-weight: 600;
-    --font-weight-1: 400;
-    --font-weight-2: bold;
-
-    --font-size: 12px;
-*/
+	/* These can optionally be set to show a border around the currently focused window.
+	--t42-focused-frame-border-color: pink;
+	--t42-frame-border-size: 3;
+	*/
 }

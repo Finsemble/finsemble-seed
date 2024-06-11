@@ -1,10 +1,19 @@
 {
 	"$schema": "./node_modules/@finsemble/finsemble-core/configs/schemas/fileBasedSchemas/project.schema.json",
+	"environments": [
+		{
+			"environment": "UAT",
+			"region": "ASIA",
+			"launch": {
+				"manifestUrl": "http://localhost:3375/configs/application/manifest-local.json"
+			}
+		}
+	],
 	"installer": {
 		"manifestUrl": "http://mysite.com/configs/application/manifest-local.json",
 		"updateUrl": "http://mysite.com/configs/application/updatesLocation",
 		"icon": "./public/assets/img/installer_icon.ico",
-		"version": "8.11.1",
+		"version": "10.0.0-iocd.10",
 		"name": "Finsemble",
 		"authors": "Finsemble",
 		"description": "Finsemble",

@@ -1,0 +1,6 @@
+;!@Install@!UTF-8!
+Title="<$name> Installer"
+SetEnvironment="ORIGINAL_PATH=%%S\%%M"
+ExecuteFile="ioConnectDesktopInstaller.exe"
+ExecuteParameters="/ext:extensibility.json "
+;!@InstallEnd@!

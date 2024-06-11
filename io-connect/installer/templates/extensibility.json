@@ -1,0 +1,123 @@
+{
+	"startup": [
+		{
+			"type": "logo",
+			"args": {
+				"file": "logo.png"
+			}
+		},
+		{
+			"type": "banner",
+			"args": {
+				"file": "banner.gif"
+			}
+		}
+	],
+	"artifacts": [],
+	"context": [
+		{
+			"type": "setValue",
+			"args": {
+				"name": "ProductName",
+				"value": "<$name>"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "Path",
+				"value": "%LocalAppData%/<$name>"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "WindowName",
+				"value": "Installing <$name>"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "Icon",
+				"value": "icon.ico"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "WelcomeScreenParagraphs",
+				"value": "This installer will install <$name> v<$version>\nIf you're installing Office Adapters, you will be prompted to close the relevant applications."
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "DoneScreenTitle",
+				"value": "<$name> has been installed"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "UninstallScreenTitle",
+				"value": "Uninstall <$name> components"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "UninstallPublisher",
+				"value": "<$companyName>"
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "DocumentationUrl",
+				"value": false
+			}
+		},
+		{
+			"type": "setValue",
+			"args": {
+				"name": "SupportEmailOrUrl",
+				"value": false
+			}
+		}
+	],
+	"styles": [],
+	"shortcuts": [
+		{
+			"type": "shortcut",
+			"args": {
+				"artifact": "Desktop",
+				"icon": "copy:icon.ico",
+				"filename": "<$name>",
+				"desktop": true,
+				"startMenu": true,
+				"description": "<$description>",
+				"targetArguments": ""
+			}
+		}
+	],
+	"finalizing": [
+		{
+			"type": "gdConfig",
+			"args": {
+				"file": "system.zip",
+				"wipe": false
+			}
+		}
+	],
+	"done": [
+		{
+			"type": "run",
+			"args": {
+				"filename": "cmd",
+				"args": "/c copy-resources.bat",
+				"exitCode1": "Error copying resources in post-installation step (copy-resources.bat)"
+			}
+		}
+	]
+}
