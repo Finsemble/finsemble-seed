@@ -375,6 +375,10 @@ Persistent distributed stores are no longer supported. Similar functionality can
 
 # Fixes
 
+------ Beta 18
+
+FIN-2028 - Added windowType "assimilation" so that `AppsClient.spawn` will not pass Finsemble command line parameters.
+
 ------ Beta 17
 
 FIN-2025 - Sped up `AppsClient.getActiveDescriptors` so it doesn't take 30s to complete.
