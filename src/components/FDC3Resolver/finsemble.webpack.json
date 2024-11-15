@@ -1,0 +1,6 @@
+{
+	"fdc3Resolver": {
+		"output": "components/FDC3Resolver/FDC3Resolver",
+		"entry": "./src/components/FDC3Resolver/FDC3Resolver.tsx"
+	}
+}
